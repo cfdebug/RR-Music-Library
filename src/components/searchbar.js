@@ -9,7 +9,7 @@ const SearchBar = () => {
     <div>
         <form>
             
-            <input ref={term} type='text' placeholder='Enter a search term here' onChange={(e) => handleSearch(e, term.current.value)} />
+            <input ref={term} type='text' placeholder='Enter a search term here' />
             
             <input type='submit' onClick={(e) => handleSearch(e, term.current.value)}/>
         </form>
