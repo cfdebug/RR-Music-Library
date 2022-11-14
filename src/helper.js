@@ -1,5 +1,5 @@
 const fetchSearch = async (searchTerm, path) => {
-    const response = await fetch(`http://localhost:4000/${path}/${searchTerm}`)
+    const response = await fetch(path+searchTerm)
     const resData = await response.json()
     return resData.results
 }

@@ -7,7 +7,7 @@ const Gallery = () => {
     const data = useContext(DataContext)
     const loadData = data.result.read()
 
-    const display = data.map((item,index) => {
+    const display = loadData.map((item,index) => {
         return (
             <GalleryItem item={item} key={index} />
         )
